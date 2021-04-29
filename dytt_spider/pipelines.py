@@ -11,6 +11,7 @@ from itemadapter import ItemAdapter
 
 
 class DyttSpiderPipeline:
+    # TODO(xgs) 存入mysql
     def process_item(self, item, spider):
         # print(item)
         with open('电影.json', "a", encoding="utf-8") as f:

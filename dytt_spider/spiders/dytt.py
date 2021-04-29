@@ -23,6 +23,7 @@ class DyttSpider(scrapy.Spider):
         :param response:
         :return:
         '''
+        # TODO(xgs) 解析数据未完成
         item = {}
         item["name"] = response.xpath('//div[@class="title_all"]/h1/font/text()').extract_first()
         """
